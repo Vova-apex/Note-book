@@ -1,0 +1,80 @@
+html,
+body {
+  height: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+.wrapper {
+  width: 1170px;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+}
+header {
+  margin-top: 32px;
+  margin-bottom: 56px;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/* Застосується до всіх посилань на сторінці */
+a {
+  text-decoration: none;
+}
+/* Застосується до всіх тегів з класом link */
+.link {
+  text-decoration: none;
+}
+/* Композиція класів
+<element class="value1 value2 value3"></element> */
+/* Селектор нащадка */
+.menu li {
+  border: 1px solid tomato;
+}
+/* Селектор дитини */
+.menu > li {
+  border: 1px solid tomato;
+}
+/* Псевдоклас :hover курсор миші знаходиться в межах елемента */
+/* Псевдоклас :focus фокус під час навігації по сторінці клавіатурою */
+.link {
+  color: teal;
+}
+.link:hover,
+.link:focus {
+  color: tomato;
+}
+/* Псевдоклас :active Відбувається під час активації елемента. */
+.link:active {
+  color: red;
+}
+/* Псевдоклас :visited  на посиланнях, які вже були відвідані. */
+.link:visited {
+  color: green;
+}
+/* Колір тексту та фону */
+body {
+  color: #2a2a2a;
+}
+.text {
+  background-color: tomato;
+  color: white;
+  color: #ff0000;
+  color: rgb(255, 0, 0);
+  background-color: rgba(255, 0, 0, 0.3);
+
+}
+/* CSS-змінні */
+:root {
+  --brand-color: #3f51b5;
+}
+.section {
+  /* Інші стилі */
+  border: 2px solid var(--brand-color);
+}
+.section-title {
+  /* Інші стилі */
+  color: var(--brand-color);
+}
+
+
